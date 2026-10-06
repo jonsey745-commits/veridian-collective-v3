@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://veridiancollective.co.uk/sitemap.xml
