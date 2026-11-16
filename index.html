@@ -681,7 +681,7 @@ requestAnimationFrame(setupReveals);
     const href=el.getAttribute('href')||'';
 
     // Only hijack internal enquiry / booking CTAs. Leave email, phone and external links alone.
-    if(!words.test(label) || /^(mailto:|tel:|https?:\/\/)/i.test(href)) return;
+    if(!words.test(label) || href==='/contact' || /^(mailto:|tel:|https?:\/\/)/i.test(href)) return;
 
     e.preventDefault();
 
