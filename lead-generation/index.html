@@ -7,6 +7,9 @@
 <link rel="icon" href="/assets/favicon.png" type="image/png">
 <link rel="stylesheet" href="/assets/veridian-shared.css"><style>
 /* Service pages inherit the exact homepage design system. */
+/* Standalone pages do not run the homepage's scroll-reveal controller. */
+.app-page.active section,.app-page.active .card,.app-page.active .service-card,.app-page.active .price-card,.app-page.active .trust,.app-page.active .cta{opacity:1!important;transform:none!important;visibility:visible!important}
+
 .app-page{display:block!important;min-height:60vh}
 .page-hero{padding:115px 0 80px}
 .page-hero h1{max-width:950px}
