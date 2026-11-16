@@ -1,0 +1,10 @@
+/* Accessible Marketing navigation submenu */
+.nav .marketing-dropdown{position:relative;display:flex;align-items:center}
+.nav .marketing-toggle{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer;padding:10px 3px;display:flex;align-items:center;gap:7px}
+.nav .marketing-toggle::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.nav .marketing-submenu{display:none;position:absolute;z-index:120;top:calc(100% - 1px);left:-15px;min-width:205px;padding:9px;background:#101711;border:1px solid rgba(183,211,191,.23);border-radius:13px;box-shadow:0 20px 42px rgba(0,0,0,.42);flex-direction:column;gap:0}
+.nav .marketing-submenu a{display:block;padding:12px 13px;color:#e4ece5;border-radius:8px;white-space:nowrap;text-decoration:none}
+.nav .marketing-submenu a:hover,.nav .marketing-submenu a:focus-visible{background:rgba(172,200,178,.13);color:#fff}
+.nav .marketing-dropdown:hover .marketing-submenu,.nav .marketing-dropdown:focus-within .marketing-submenu,.nav .marketing-dropdown.is-open .marketing-submenu{display:flex}
+.nav .marketing-toggle:focus-visible{outline:2px solid #b8d2be;outline-offset:3px}
+@media(max-width:850px){.nav .marketing-dropdown{display:block;width:100%}.nav .marketing-toggle{width:100%;padding:10px;text-align:left;justify-content:space-between}.nav .marketing-submenu{position:static;min-width:0;width:100%;box-shadow:none;margin:0 0 5px;padding:3px 8px;background:rgba(255,255,255,.025)}.nav .marketing-dropdown:hover .marketing-submenu{display:none}.nav .marketing-dropdown.is-open .marketing-submenu,.nav .marketing-dropdown:focus-within .marketing-submenu{display:flex}}
